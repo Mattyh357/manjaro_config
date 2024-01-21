@@ -1,0 +1,80 @@
+# Install
+proprietary drives if gpu == NVIDIA else open source
+next next next... :) erase all - SELECT THE CORRECT DISK! :)
+swap - if there is a chance you might run out of ram - SPAP (no hybernate)
+
+
+# Update
+sudo pacman -Syu
+
+# Yay
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay --version
+
+
+# I3 + Stuff
+sudo pacman -S i3 polybar dmenu alacritty rofi rofi-calc arandr feh notify-osd
+
+<Loken_INGORE>
+# Headphones -
+sudo pacman -S cmake hidapi
+git clone https://github.com/Sapd/HeadsetControl && cd HeadsetControl
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+headsetcontrol
+</Loken_INGORE>
+
+# SOFTWARE
+yay -S google-chrome
+sudo pacman -S kolourpaint ranger smplayer
+yay -S jetbrains-toolbox
+yay -S dropbox
+yay -S android-studio
+sudo pacman -S steam discord
+
+
+# Copy config files over - (display hidden files - CTRL + H in dolphin)
+.zshrc -> ~/.zshrc
+rest -> ~/.config/
+
+
+# Update config:
+~/.config/i3/config:  - change resolution
+
+
+# REBOOT
+sudo reboot now
+!!!when entereing password select I3!!!
+
+
+# TLDR hotkey:
+win+F3 exec dolphin
+win+F4 exec google-chrome-stable
+win+Return terminal
+win+z exec launcher
+win+q kill
+
+win+Right focus right
+win+Shift+Left move left
+win+End mode "Exit (L)ogout, (R)eboot, (P)oweroff"
+
+win+lclick - move window
+win+rclick - resize window
+
+scroll over bar - switch desktop (when more than 1 is opened)
+
+# ALIAS
+i3c - i3 config file
+polyc - polybar config
+c = clear
+r = ranger
+ll - ls all with colors and stuff
+
+
+# TBD
+conky - print crap on desktop...
