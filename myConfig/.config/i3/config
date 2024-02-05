@@ -10,7 +10,10 @@ exec --no-startup-id nm-applet
 exec_always ~/.config/polybar/launch.sh &
 exec_always feh --bg-fill ~/.config/bg_img/bg.jpg
 exec_always headsetcontrol -s 115
-exec_always xrandr --output DP-0 --mode 5120x1440
+
+################################################################################################
+## exec_always xrandr --output DP-0 --mode 5120x1440
+################################################################################################
 
 exec --no-startup-id dropbox
 exec --no-startup-id discord
